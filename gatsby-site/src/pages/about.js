@@ -1,10 +1,17 @@
 import React from 'react'
+import LinkedInBadge from './../components/LinkedInBadge'
+import PersonalInfo from'./../components/PersonalInfo'
 
 class About extends React.Component {
-    render(){
-        return(
-            <div>
-                <h1>About me</h1>
+    render() {
+        return (
+            <div style={{
+                display:"flex",
+                flexDirection: "row",
+                justifyContent: "center"
+            }}>
+                <PersonalInfo/>
+                <LinkedInBadge/>
             </div>
         )
     }
