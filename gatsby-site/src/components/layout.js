@@ -20,17 +20,19 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 1200,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
       >
       <Navigation/>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        <footer style={{backgroundColor:"whitesmoke"}}>
+          <p>
+          © {new Date().getFullYear()}, Built by Aditya Zagade
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </p>
+          {/* <a href="https://www.gatsbyjs.org">Gatsby</a> */}
         </footer>
       </div>
     </>
